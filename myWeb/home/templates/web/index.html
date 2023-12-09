@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Web</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'web/css/styles.css' %}">
+</head>
+<body>
+    
+    <main>
+        <h1>Hello world</h1>
+
+        <div>
+            <img src="{% static 'web/img/iglesia.jpeg' %}" alt="iglesia">
+        </div>
+    </main>
+
+    <script src="{% static 'web/js/script.js' %}"></script>
+</body>
+</html>
