@@ -31,7 +31,7 @@ body{
 .nav__hamburguer{
     width: 30px;
     height: 50%;
-    background-image: url("../images/icon-menu.svg");
+    background-image: url("../img/icon-menu.svg");
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
@@ -41,7 +41,8 @@ body{
 }
 
 .nav__hamburguer--open{
-    background-image: url("../images/icon-close-menu.svg");
+    
+    background-image: url("../img/icon-close-menu.svg");
 }
 
 .nav__overlay{
@@ -49,7 +50,7 @@ body{
     position: fixed;
     inset: 0;
 
-    opacity: 1;
+    opacity: 0;
     pointer-events: none;
     transition: .3s opacity;
 }
@@ -98,4 +99,37 @@ body{
 
     height: 0;
     transition: height .4s;
+}
+
+.nav__parent{
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 1.3em;
+    padding: 20px 0;
+}
+
+.nav__link{
+    text-decoration: none;
+    color: var(--almost-black);
+}
+
+.nav__login{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nav__login--border{
+    border-radius: 1em;
+    margin-top: 20px;
+    border: 1px solid var(--medium-gray);
+}
+
+.nav__sign{
+    display: inline-block;
+    color: var(--medium-gray);
+    padding: .7em;
+    text-decoration: none;
 }

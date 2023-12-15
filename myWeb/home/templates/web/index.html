@@ -22,7 +22,9 @@
         <div class="nav__hamburguer"></div>
     
         <div class="nav__overlay">
+
           <ul class="nav__menu">
+
             <li class="nav__item">
     
               <span class="nav__parent">Fetures
@@ -58,7 +60,10 @@
               </ul>
             </li>
     
+
+
             <li class="nav__item">
+
               <span class="nav__parent">Company
                 <img src="{% static 'web/img/icon-arrow-down.svg' %}" alt="" class="nav__arrow">
               </span>
@@ -77,16 +82,20 @@
     
               </ul>
             </li>
+
     
             <li class="nav__item">
               <a href="#" class="nav__link">Careers</a>
             </li>
+
             <li class="nav__item">
               <a href="#" class="nav__link">About</a>
             </li>
+
             <li class="nav__login">
               <a href="#" class="nav__sign">Login</a>
             </li>
+
             <li class="nav__login nav__login--border">
               <a href="#" class="nav__sign">Register</a>
             </li>
@@ -97,7 +106,9 @@
     
       <main class="main">
         <section class="main_grid">
+          
           <picture class="main__picture">
+            
             <source srcset="{% static 'web/img/image-hero-desktop.png' %}" class="main__img"
                     media="(min-width:768px)">
             <img src="{% static 'web/img/image-hero-mobile.png' %}" alt="" class="main__img">
@@ -125,7 +136,7 @@
         </section>
       </main>
     
-      <script src="../../../static/js/menu.js"></script>
+      <script src="{% static 'web/js/menu.js' %}"></script>
 
 </body>
 </html>
