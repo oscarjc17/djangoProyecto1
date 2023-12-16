@@ -15,11 +15,11 @@ navOverlay.addEventListener('click', (e)=>{
 
     if( isActive(currentElement, 'nav__parent') ){
        // console.log('Tengo un submenu')
+       const subMenu = currentElement.parentElement.children[1];
 
         if(window.innerWidth < 768){
 
-            let height = (subMenu.clientHeight == 0)
-                            ? subMenu.scrollHeight : 0;
+            let height = (subMenu.clientHeight == 0) ? subMenu.scrollHeight : 0;
 
             subMenu.style.height  = `${height}px`;
         }else{
