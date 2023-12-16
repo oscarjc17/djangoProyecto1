@@ -9,22 +9,5 @@ hamburguerIcon.addEventListener('click', ()=>{
 });
 
 navOverlay.addEventListener('click', (e)=>{
-    e.preventDefault();
-    const currentElement = e.target;
-
-    if(isActive(currentElement, 'nav__parent') ){
-
-        const subMenu = currentElement.parentElement.children[1];
-        console.log(subMenu);
-
-        if(window.innerWidth < 768){
-
-            let height = (subMenu.clientHeight == 0)
-                            ? subMenu.scrollHeight : 0;
-            
-            subMenu.style.height  = `${height}px`;
-        }else{
-            
-        }
-    }
-})
+    console.log(e.target);
+});
