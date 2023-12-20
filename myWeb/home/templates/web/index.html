@@ -11,6 +11,7 @@
     <!--css link -->
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'web/css/styles.css' %}">
+    <link rel="icon" href="{% static 'web/img/favicon-32x32.png' %}">
     <title>Django Web</title>
     
 </head>
@@ -105,7 +106,7 @@
       </nav>
     
       <main class="main">
-        <section class="main_grid">
+        <section class="main__grid">
           
           <picture class="main__picture">
             
@@ -114,14 +115,14 @@
             <img src="{% static 'web/img/image-hero-mobile.png' %}" alt="" class="main__img">
           </picture>
     
-          <article class="main_article">
+          <article class="main__article">
     
             <div class="main__texts">
               <h1 class="main__title">Make remote work</h1>
               <p class="main__paragraph">Get your team in sync, no matter your location. Streamline processes, create team
                 rituals, and watch productivity soar
               </p>
-              <a href="#" class="main__cta"></a>
+              <a href="#" class="main__cta">Learn more</a>
             </div>
     
             <div class="main__brands">
