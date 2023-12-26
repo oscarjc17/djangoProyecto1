@@ -193,3 +193,48 @@ body{
 .main__brand{
     width: 100px;
 }
+
+/* DESKTOP VIEW */
+
+@media (min-width:768px){
+    .nav{
+        gap: 2em;
+        overflow: visible;
+        padding: 50px 0 0;
+    }
+
+    .nav__hamburguer{
+        display: none;
+    }
+
+    .nav__overlay{
+        position: unset;
+        background-color: transparent;
+        opacity: 1;
+        pointer-events: unset;
+
+        /* para ocupar todo el espacio en el nav */
+        flex: 1;
+    }
+
+    .nav__menu{
+        position: unset;
+        background-color: unset;
+        width: 100%;
+        max-width: unset;
+        padding: 0;
+        overflow: unset;
+        
+        display: flex;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .nav__item{
+        width: max-content;
+        margin: 0;
+        padding: 0;
+
+        position: relative;
+    }
+}

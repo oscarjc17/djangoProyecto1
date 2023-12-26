@@ -31,3 +31,13 @@ navOverlay.addEventListener('click', (e)=>{
 function isActive(element, string){
     return element.classList.value.includes(string);
 }
+
+window.addEventListener('resize', ()=>{
+    if(window.innerWidth > 768){
+        const navInners = document.querySelectorAll('.nav__inner');
+
+        navInners.forEach(navInner =>{
+            navInner.style.height = '';
+        });
+    }
+});
