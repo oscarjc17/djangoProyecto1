@@ -237,4 +237,83 @@ body{
 
         position: relative;
     }
+
+    .nav__inner{
+        width: max-content;
+        position: absolute;
+        left: 0;
+        padding: 0;
+        height: auto;
+
+        padding: 2em;
+        background-color: #fff;
+        z-index: 100;
+
+        border-radius: 10px;
+        box-shadow: 0 0 10px 0 rgb(0, 0, 0, .5);
+
+        transition: opacity .3s;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .nav__inner--show{
+        opacity: 1;
+        pointer-events: unset;
+    }
+
+    .nav__login{
+        width: max-content;
+        margin: 0;
+        margin-left: auto;
+    }
+
+    .nav__login--border{
+        margin: 0;
+        padding: 0 1em;
+    }
+
+    .main__grid{
+        margin: 0 auto;    
+        max-width: 1200px;
+        width: 98%;
+
+        gap: 2em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "text img";
+
+        padding: 78px 0;
+    }
+
+    .main__picture{
+       max-height: 500px;
+    }
+
+    .main__img{
+        height: 100%;
+    }
+
+    .main__article{
+        text-align: left;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main__brands{
+        margin: auto 0 0 0;
+    }
+
+    .main__texts{
+        margin: auto 0;
+    }
+
+    .main__title{
+        font-size: 3.5rem;
+    }
+    
+    .main__paragraph{
+        margin: 2em 0;
+    }
 }
